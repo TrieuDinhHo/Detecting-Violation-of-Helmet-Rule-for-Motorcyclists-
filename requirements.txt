@@ -1,0 +1,6 @@
+fastapi 
+loguru 
+opencv-python 
+ultralytics 
+uvicorn
+python-multipart

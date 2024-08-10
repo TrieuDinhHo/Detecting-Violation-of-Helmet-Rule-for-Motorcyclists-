@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yono Team</title>
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./image/logo-hcmute-inkythuatso.svg" alt="Yono Team Logo">
+            <span>Yono Team</span>
+        </div>
+        <div class="menu">
+            <a href="#" class="main-page">Main Page</a>
+            <a href="#image" id="image-link" class="redirect-login">Image</a>
+            <a href="#video" id="video-link" class="redirect-login">Video</a>
+            <a href="#live" id="live-link" class="redirect-login">Live Video</a>
+            <a href="#" id="about-link">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="profile">
+            <img src="./image/profile.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="dropdown">
+                <i class='bx bx-chevron-down'></i>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#" class="logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>DETECTING VIOLATION OF HELMET RULE FOR MOTORCYCLISTS</h1>
+    </div>
+    
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="sidebar">
+                <label><input type="checkbox" class="yolo-checkbox" value="yolo7n"> yolo7n</label><br>
+                <label><input type="checkbox" class="yolo-checkbox" value="yolo8n"> yolo8n</label><br>
+                <label><input type="checkbox" class="yolo-checkbox" value="yolo9n"> yolo9n</label><br>
+                <label><input type="checkbox" class="yolo-checkbox" value="yolo10n"> yolo10n</label><br>
+                <label><input type="checkbox" class="yolo-checkbox" value="yolo11n"> yolo11n</label><br>
+                <button type="button" class="btn" onclick="predictImage()">Inference</button>
+            </div>
+            <div class="main">
+                <div class="io-container">
+                    <div class="input" id="image-input">INPUT</div>
+                    <input type="file" id="ImageInput" accept="image/*" style="display: none;">
+                    <div class="output" id="image-output">OUTPUT</div>
+                    <input type="file" id="ImageOutput" accept="image/*" style="display: none;">
+                </div>
+                <button class="drop-area" id="image-drop-area">
+                    <div class="area">Drag and Drop Image Here</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="sidebar">
+                <label><input type="checkbox"> yolo7n</label><br>
+                <label><input type="checkbox"> yolo8n</label><br>
+                <label><input type="checkbox"> yolo9n</label><br>
+                <label><input type="checkbox"> yolo10n</label><br>
+                <label><input type="checkbox"> yolo11n</label><br>
+                <button type="button" class="btn" onclick="predictVideo()">Inference</button>
+            </div>
+            <div class="main">
+                <div class="io-container">
+                    <div class="input" id="video-input">INPUT</div>
+                    <input type="file" id="VideoInput" accept="video/*" style="display:none">
+                    <div class="output" id="video-output">OUTPUT</div>
+                    <input type="file" id="VideoOutput" accept="video/*" style="display: none;">
+                </div>
+                <button class="drop-area" id="video-drop-area">
+                    <div class="area">Drag and Drop Video Here</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Live Video Modal -->
+    <div id="live-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="sidebar">
+                <label><input type="checkbox"> yolo7n</label><br>
+                <label><input type="checkbox"> yolo8n</label><br>
+                <label><input type="checkbox"> yolo9n</label><br>
+                <label><input type="checkbox"> yolo10n</label><br>
+                <label><input type="checkbox"> yolo11n</label><br>
+                <button class="btn">Inference</button>
+            </div>
+            <div class="main">
+                <div class="io-container">
+                    <div class="input">INPUT</div>
+                    <!-- <button id="go-button-live" class="go-btn">Go</button> -->
+                    <div class="output">OUTPUT</div>
+                </div>
+                <div class="drop-area">
+                    <button class="area" onclick="">Drag and Drop Live Video Here </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./javascripts/mainpage.js"></script>
+    <script src="./javascripts/image_predict.js"></script>
+    <script src="./javascripts/video_predict.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+</html>
