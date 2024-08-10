@@ -36,5 +36,5 @@ By clicking into file `index.html`, login with email `admin@gmail.com` and passw
 
 **Image Predict**
 ![Image](./image/image_pred.png)
-## Video Demo
+## Video Demo (Click to see)
 [![Watch the video](https://raw.githubusercontent.com/TrieuDinhHo/Detecting-Violation-of-Helmet-Rule-for-Motorcyclists-/master/image/main_screen.png)](https://raw.githubusercontent.com/TrieuDinhHo/Detecting-Violation-of-Helmet-Rule-for-Motorcyclists-/master/image/20240806_202124.mp4)
